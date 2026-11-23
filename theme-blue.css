@@ -1,8 +1,8 @@
-/* TEST: luxurious blue palette over the volt theme.
+/* TEST: navy with a champagne-gold accent over the volt theme.
    Loaded after theme-volt.css; remove this file and its <link> to go back to the green theme. */
 :root {
-    --volt: #5FB3FF;
-    --volt-rgb: 95, 179, 255;
+    --volt: #D4AF5F;
+    --volt-rgb: 212, 175, 95;
     --olive: #0D1B2E;
     --olive-rgb: 13, 27, 46;
     --olive-2: #13243B;
@@ -19,10 +19,16 @@ body {
     --shade-rgb: 8, 18, 31;
     --shade-deep-rgb: 5, 11, 20;
 }
-body.page-home        { --volt: #5FB3FF; --volt-rgb: 95, 179, 255;  --olive: #0D1B2E; --olive-rgb: 13, 27, 46; --olive-2: #13243B; --olive-3: #1A2F4A; }
-body.page-apartments  { --volt: #6AA8FF; --volt-rgb: 106, 168, 255; --olive: #0F1D33; --olive-rgb: 15, 29, 51; --olive-2: #152741; --olive-3: #1C324F; }
-body.page-maisonettes { --volt: #7FC8FF; --volt-rgb: 127, 200, 255; --olive: #111A2C; --olive-rgb: 17, 26, 44; --olive-2: #172338; --olive-3: #1E2D45; }
-body.page-why         { --volt: #58A6FF; --volt-rgb: 88, 166, 255;  --olive: #0C1C2C; --olive-rgb: 12, 28, 44; --olive-2: #122638; --olive-3: #193146; }
-body.page-tour        { --volt: #6DB8FF; --volt-rgb: 109, 184, 255; --olive: #0E1A30; --olive-rgb: 14, 26, 48; --olive-2: #14243D; --olive-3: #1B2F4C; }
-body.page-gallery     { --volt: #64B0FF; --volt-rgb: 100, 176, 255; --olive: #101C2E; --olive-rgb: 16, 28, 46; --olive-2: #16263B; --olive-3: #1D3049; }
-body.page-contact     { --volt: #8CCBFF; --volt-rgb: 140, 203, 255; --olive: #0E1D30; --olive-rgb: 14, 29, 48; --olive-2: #15273E; --olive-3: #1C324C; }
+body.page-home        { --volt: #D4AF5F; --volt-rgb: 212, 175, 95;  --olive: #0D1B2E; --olive-rgb: 13, 27, 46; --olive-2: #13243B; --olive-3: #1A2F4A; }
+body.page-apartments  { --volt: #DDB96F; --volt-rgb: 221, 185, 111; --olive: #0F1D33; --olive-rgb: 15, 29, 51; --olive-2: #152741; --olive-3: #1C324F; }
+body.page-maisonettes { --volt: #C9A458; --volt-rgb: 201, 164, 88; --olive: #111A2C; --olive-rgb: 17, 26, 44; --olive-2: #172338; --olive-3: #1E2D45; }
+body.page-why         { --volt: #E0BE78; --volt-rgb: 224, 190, 120;  --olive: #0C1C2C; --olive-rgb: 12, 28, 44; --olive-2: #122638; --olive-3: #193146; }
+body.page-tour        { --volt: #D1AA5A; --volt-rgb: 209, 170, 90; --olive: #0E1A30; --olive-rgb: 14, 26, 48; --olive-2: #14243D; --olive-3: #1B2F4C; }
+body.page-gallery     { --volt: #D7B467; --volt-rgb: 215, 180, 103; --olive: #101C2E; --olive-rgb: 16, 28, 46; --olive-2: #16263B; --olive-3: #1D3049; }
+body.page-contact     { --volt: #E3C383; --volt-rgb: 227, 195, 131; --olive: #0E1D30; --olive-rgb: 14, 29, 48; --olive-2: #15273E; --olive-3: #1C324C; }
+
+/* Background contour lines: thicker and easier to see */
+body::before { opacity: 0.15; }
+body::after  { opacity: 0.08; }
+body::before,
+body::after { background-image: url("images/contours.svg?v=20261123b"); }
